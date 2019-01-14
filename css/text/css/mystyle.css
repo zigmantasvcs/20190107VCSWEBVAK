@@ -1,0 +1,47 @@
+ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: black;
+	color: white;
+}
+
+a:visited{
+	color:green;
+}
+
+a:active{
+	color: red;
+}
+
+div{
+	letter-spacing: 5px;
+	text-align: right;
+}
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+}
+
+.text{
+	letter-spacing:inherit;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+
+td{
+	height: 100px;
+	vertical-align: bottom;
+}
+
+[class*="text"]{
+	color: purple;
+}
