@@ -117,6 +117,10 @@
 								$(document).ready(function(){
 										$('.sidenav').sidenav(); 
 										$('.parallax').parallax();
+									
+										$('a[href="#offers"]').click(function(event){
+												$('html, body').animate({scrollTop: $("#offers").offset().top}, 'slow');
+									});
 								});
 						</script>
     </body>
