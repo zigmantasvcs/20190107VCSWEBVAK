@@ -1,0 +1,123 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/mymaterialize.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+					  body {
+									display: flex;
+									min-height: 100vh;
+									flex-direction: column;
+							}
+
+							main {
+									flex: 1 0 auto;
+							}
+							a{
+								color:inherit !important;
+							}
+							
+							.fullsize{
+								height: 100vh;
+							}
+						</style>
+    </head>
+
+    <body>
+						
+						<nav class="red accent-3">
+							<div class="nav-wrapper">
+									<a href="#!" class="brand-logo">Logo</a>
+									<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+									<ul class="right hide-on-med-and-down blue-text text-darken-2">
+										<li><a href="index.html">Pagrindinis</a></li>
+										<li><a href="#offers">Pasiūlymai</a></li>
+										<li><a href="about.html">Kontaktai</a></li>
+									</ul>
+							</div>
+					</nav>
+
+					<ul class="sidenav" id="mobile-demo">
+							<li><a href="index.html">Pagrindinis</a></li>
+							<li><a href="offers.html">Pasiūlymai</a></li>
+							<li><a href="about.html">Kontaktai</a></li>
+					</ul>
+<!--					main-->
+					<main class="container">
+						
+					
+						<div class="parallax-container fullsize">
+								<div class="parallax"><img src="images/image1.jpg"></div>
+						</div>
+						
+						
+						<div id="offers" class="section white fullsize">
+								<div class="row container">
+										<h2 class="header">Pasiūlymai</h2>
+										<a href="https://www.efoto.lt/fotografija"><i class="material-icons">add_a_photo</i></a>
+										
+									<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.In quis distinguantur. Culpa voluptate quamquam a qui de lorem duis sunt quo de 
+										quem cillum magna vidisse do ne sint admodum voluptatibus. Si noster 
+										familiaritatem aut et duis expetendis quamquam. Est occaecat o mentitum de si 
+										aliqua anim illum senserit. Iis id philosophari sed sed in quorum nescius iis 
+										enim senserit an elit sunt, esse qui ne minim possumus. Ea duis appellat 
+										deserunt, deserunt minim culpa ullamco nulla nam quem o mandaremus do multos, ab 
+										enim legam aut mandaremus ea quem nam a veniam officia e singulis iis commodo a 
+										hic amet aliqua aute nescius, culpa tempor do sint anim. Ut velit enim veniam 
+										incurreret, deserunt philosophari e pariatur id eram possumus ubi transferrem ex 
+										ea quid cupidatat, eiusmod hic tamen, ipsum e ut duis nescius, irure vidisse 
+										concursionibus id ita summis est malis. Iis labore est dolore in ea varias o 
+										duis hic velit ita in nisi mentitum iis tamen non expetendis.</p>
+								</div>
+						</div>
+						
+						<div class="parallax-container">
+								<div class="parallax"><img src="images/image2.jpg"></div>
+						</div>
+						
+					</main>
+					
+					<footer class="page-footer red accent-3">
+						<div class="container">
+								<div class="row">
+										<div class="col l6 s12">
+												<h5 class="white-text">Kaip mus rasti</h5>
+												<iframe src="http://www.vilniuscoding.lt" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+										</div>
+										<div class="col l4 s12">
+												<h5 class="white-text">Links</h5>
+												<ul>
+														<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+														<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+														<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+														<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+												</ul>
+										</div>
+								</div>
+						</div>
+						<div class="footer-copyright">
+								<div class="container">
+								© 2014 Copyright Text
+								<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+								</div>
+						</div>
+				</footer>
+					
+					
+						
+						<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+								$(document).ready(function(){
+										$('.sidenav').sidenav(); 
+										$('.parallax').parallax();
+								});
+						</script>
+    </body>
+  </html>
