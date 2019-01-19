@@ -41,7 +41,7 @@
 							<div class="article">
 								<h3>Antraštė</h3>
 								<figure>
-									<img src="images/pav.jpg" title="" alt=""> 
+									<img src="images/pav.jpg" class="img" title="" alt=""> 
 									<figcaption>Buda</figcaption>
 								</figure>
 								
@@ -94,5 +94,30 @@
 		</footer>
 		
 	</div>
+	
+	<script>
+		// paimame visus elementus su img klase
+		var images = document.getElementsByClassName("img");
+		
+		// paimame modal elementa
+		var modal = document.getElementsByClassName("modal")[0];
+		
+		// sukame ciklą per paveiksliukus
+		for(var i =0;i<images.length;i++){
+			// sukuriame paspaudimo ivyki kiekvienam paveiksliuka
+			images[i].addEventListener("click", function(){
+				
+				// idedame i tuscia modal paveiksliuka
+				modal.innerHTML = "<img src='"+this.src+"'>";
+				// paspaudimo metu igaliname rodyti modal forma kaip flex
+				modal.style.display = "flex";
+			})
+		}
+		
+		// sukuriame paspaudimo ivyki ant modal kuris uzdaro modal
+		modal.addEventListener("click", function(){
+			modal.style.display = "none";
+		});
+	</script>
 </body>
 </html>
